@@ -20,13 +20,13 @@ public class Controller : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("mouse down");
+            //Debug.Log("mouse down");
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("hit " + hit.point);
+                //Debug.Log("hit " + hit.point);
                 pos = hit.point;
                 agent.SetDestination(pos);
             }
